@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "SEO Checker by Sekhlo",
+  "description": "AI-powered SEO analyzer with AEO & GEO optimization. Optimize for ChatGPT, Perplexity & search engines with AI suggestions.",
+  "version": "1.0.5",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "notifications",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "https://www.google.com/*",
+    "https://www.google.co.uk/*",
+    "https://www.google.ca/*",
+    "https://www.google.com.au/*",
+    "https://www.google.de/*",
+    "https://www.google.fr/*",
+    "https://www.google.es/*",
+    "https://www.google.it/*",
+    "https://www.google.nl/*",
+    "https://www.google.co.in/*",
+    "https://www.google.com.pk/*",
+    "https://*.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SEO Checker by Sekhlo",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*"],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ]
+}
